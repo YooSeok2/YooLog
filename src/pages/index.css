@@ -45,8 +45,8 @@
 
 
 .about_main{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .about_header{
@@ -137,6 +137,7 @@
 
     .about_footer{
         height: 6vh;
+        
     }
     .about_body{
         height: inherit;
@@ -152,5 +153,40 @@
 
     .font_size{
         font-size: 1.3rem;
+    }
+}
+
+
+@media all and (max-width: 400px){
+    .about_body > div > img{
+        display: none;
+    }
+    .about_footer{
+        height: 5%;
+        flex: 1;
+        margin-top: 2vh;
+    }
+    
+
+    .about_body{
+        height: 95%;
+        flex: 5;
+    }
+
+    .githubbox{
+        align-content: center;
+    }
+    .about_p{
+        font-size: 1.5rem;
+    }
+
+    .font_size{
+        font-size: 1.3rem;
+    }
+    
+    .hamburger{
+        position: absolute;
+        left: 6vw;
+        top : 1.5vh;
     }
 }
