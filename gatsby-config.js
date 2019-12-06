@@ -3,7 +3,7 @@ module.exports = {
     title: `Kim Yoo seok' Blog`,
     author: `Kim Yoo Seok`,
     description: `Yoolog`,
-    siteUrl: `https://Yoolog.me`,
+    siteUrl: `https://yoolog.netlify.com`,
   },
   plugins: [
     {
