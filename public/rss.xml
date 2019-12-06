@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kim Yoo seok' Blog]]></title><description><![CDATA[Yoolog]]></description><link>https://Yoolog.me</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 06 Dec 2019 04:51:09 GMT</lastBuildDate><item><title><![CDATA[슬랙 봇을 이용한 사내 출결 관리 시스템]]></title><description><![CDATA[…]]></description><link>https://Yoolog.me/slack/</link><guid isPermaLink="false">https://Yoolog.me/slack/</guid><pubDate>Tue, 26 Nov 2019 02:04:20 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kim Yoo seok' Blog]]></title><description><![CDATA[Yoolog]]></description><link>https://yoolog.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 06 Dec 2019 04:54:12 GMT</lastBuildDate><item><title><![CDATA[슬랙 봇을 이용한 사내 출결 관리 시스템]]></title><description><![CDATA[…]]></description><link>https://yoolog.netlify.com/slack/</link><guid isPermaLink="false">https://yoolog.netlify.com/slack/</guid><pubDate>Tue, 26 Nov 2019 02:04:20 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/788a08fb3e2091c377949cd207112922/635b1/slack.png&quot;
@@ -371,7 +371,7 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 &lt;/ul&gt;
 &lt;br&gt;
 &lt;h1&gt;긴 글 읽어주셔서 감사합니다.&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[경찰청 키오스크]]></title><description><![CDATA[개요 실내 실시간 공기질 측정 모니터링프로젝트를 마치고 얼마 안 지나서 사내에서 진행하는 프로젝트에
-투입되었다. 바로 경찰청 키오스크이다. 크게 4개의 메뉴로 나뉘는데 그 중…]]></description><link>https://Yoolog.me/police/</link><guid isPermaLink="false">https://Yoolog.me/police/</guid><pubDate>Fri, 25 Oct 2019 08:33:33 GMT</pubDate><content:encoded>&lt;p&gt;
+투입되었다. 바로 경찰청 키오스크이다. 크게 4개의 메뉴로 나뉘는데 그 중…]]></description><link>https://yoolog.netlify.com/police/</link><guid isPermaLink="false">https://yoolog.netlify.com/police/</guid><pubDate>Fri, 25 Oct 2019 08:33:33 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/327224e3ada6e12c97f5f9c6cf6041d4/caa67/policemain.png&quot;
@@ -656,7 +656,7 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
         &lt;span class=&quot;token string&quot;&gt;&quot;rc-pagination&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;^1.20.8&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/br&gt;
-&lt;h1&gt;긴 글 읽어주셔서 감사합니다.&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[인스타그램 메인화면 By React]]></title><description><![CDATA[개요 javascript는 어느 순간부터 프레임워크 및 라이브러리의 홍수 속에 있는 듯합니다. 어느 네이버 개발자가 한 말이다. 나도 위의 문구에 크게 공감한다. 그 중에서도 3대장이라 불리우는 Vue.js, Augular.js, React.js…]]></description><link>https://Yoolog.me/instagram/</link><guid isPermaLink="false">https://Yoolog.me/instagram/</guid><pubDate>Mon, 14 Oct 2019 05:13:46 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;h1&gt;긴 글 읽어주셔서 감사합니다.&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[인스타그램 메인화면 By React]]></title><description><![CDATA[개요 javascript는 어느 순간부터 프레임워크 및 라이브러리의 홍수 속에 있는 듯합니다. 어느 네이버 개발자가 한 말이다. 나도 위의 문구에 크게 공감한다. 그 중에서도 3대장이라 불리우는 Vue.js, Augular.js, React.js…]]></description><link>https://yoolog.netlify.com/instagram/</link><guid isPermaLink="false">https://yoolog.netlify.com/instagram/</guid><pubDate>Mon, 14 Oct 2019 05:13:46 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/ae51afe1026e668d18c923a111733083/a6906/instagram.png&quot;
@@ -1100,7 +1100,7 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1&gt;긴 글 읽어주셔서 감사합니다.&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[실내 공기질 측정 모니터링]]></title><description><![CDATA[…]]></description><link>https://Yoolog.me/finedust/</link><guid isPermaLink="false">https://Yoolog.me/finedust/</guid><pubDate>Wed, 11 Sep 2019 02:04:20 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;h1&gt;긴 글 읽어주셔서 감사합니다.&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[실내 공기질 측정 모니터링]]></title><description><![CDATA[…]]></description><link>https://yoolog.netlify.com/finedust/</link><guid isPermaLink="false">https://yoolog.netlify.com/finedust/</guid><pubDate>Wed, 11 Sep 2019 02:04:20 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/97bb256459b4bd15de2d04bb08ded56a/a5ebe/finedust.png&quot;

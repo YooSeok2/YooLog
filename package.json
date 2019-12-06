@@ -67,7 +67,6 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "purge:css": "purgecss -c purgecss.config.js -o ./src/components/Layout",
     "tailwind": "tailwind build ./config.tailwind.css -c ./tailwind.config.js -o ./src/components/Layout/tailwind.css",
