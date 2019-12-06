@@ -1,0 +1,1 @@
+{"errors":[{"message":"Field \"image\" must not have a selection since type \"String\" has no subfields.","locations":[{"line":18,"column":17}]},{"message":"Field \"image\" must not have a selection since type \"String\" has no subfields.","locations":[{"line":41,"column":17}]}]}

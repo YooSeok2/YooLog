@@ -4,7 +4,7 @@ const ghpages = require('gh-pages')
 ghpages.publish(
   'public',
   {
-    branch: 'origin',
+    branch: 'master',
     repo: 'https://github.com/YooSeok2/YooSeok2.github.io.git',
   },
   () => {
