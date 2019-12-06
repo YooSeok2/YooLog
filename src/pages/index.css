@@ -1,0 +1,148 @@
+.hamburger{
+    position: absolute;
+    left: 20vw;
+    top : 3vh;
+}
+
+.home_main{
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    width: 100%;
+    height: 7vh;
+}
+
+.header_main{
+    padding-bottom: 2vh;
+    font-family: Poppins;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.blog_div{
+    width: 70vw;
+    margin-left: 15vw;
+}
+
+.postcard{
+    margin : 2rem 1.5rem 2rem 1.5rem;
+}
+
+.me_img{
+    width:15vw;
+}
+
+.about_h3{
+    text-align: center;
+    margin-top: 2vh;
+}
+
+
+.about_main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.about_header{
+    width: 100%;
+    height: 8vh;
+}
+
+.about_body{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.about_body > div{
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    height: inherit;
+    margin-left: 4vw;
+    padding-top: 2vh;
+    padding-left: 1vw;
+}
+
+.about_body > div > div{
+    flex :1;
+    margin-top: 2vh;
+}
+
+.about_body > div > img{
+    flex : 2/3;
+    margin-top: 7vh;
+    width: 30vw;
+    height: 50vh;
+}
+
+.about_body > div > div > ul{
+    margin-top: 3vh;
+}
+
+.about_footer{
+    height: 12vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #edf2f7;
+}
+
+.about_p{
+    margin: 2vh 0 2vh 0;
+    font-family: Nanum Barun Gothic;
+    font-size: 1.7rem;
+    font-style: italic;
+}
+
+.font{
+    font-family: Nanum Barun Gothic;
+}
+
+.font_bold{
+    font-weight: bold;
+}
+
+.font_size{
+    font-size: 1.5rem;
+}
+
+.console{
+    color: green;
+}
+
+.githubbox{
+    margin-left: 14vw;
+}
+
+@media all and (max-width: 1000px){
+    .about_body > div > img{
+        display: none;
+    }
+
+    .about_footer{
+        height: 6vh;
+    }
+    .about_body{
+        height: inherit;
+    }
+
+    .githubbox{
+        margin-left: 0;
+    }
+}
