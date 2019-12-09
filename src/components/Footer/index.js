@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Social from '../Common/Social'
 
 const Footer = () => {
   return (
@@ -15,6 +16,9 @@ const Footer = () => {
             Made with using GatsbyJS and
             Netlify
           </small>
+        </div>
+        <div className="w-full md:w-1/3 py-2 flex justify-center md:justify-end">
+          <Social />
         </div>
       </div>
     </footer>

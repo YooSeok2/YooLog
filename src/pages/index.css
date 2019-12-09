@@ -15,6 +15,7 @@
 }
 
 .header_main{
+    padding-top: 2vh;
     padding-bottom: 2vh;
     font-family: Poppins;
     align-content: center;
@@ -55,6 +56,7 @@
 }
 
 .about_body{
+    padding-top: 2vh;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     display: flex;
@@ -144,8 +146,7 @@
     }
 
     .githubbox{
-        align-content: center;
-        
+        margin-left: -1vw;
     }
     .about_p{
         font-size: 1.5rem;
@@ -174,7 +175,7 @@
     }
 
     .githubbox{
-        align-content: center;
+        margin-left: -1vw;
     }
     .about_p{
         font-size: 1.5rem;
