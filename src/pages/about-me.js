@@ -48,16 +48,6 @@ const About = ({ data }) => {
               <h3 className="about_h3 text-3xl text-blue-400">경험</h3>
 
               <p className="about_p">(주)시더에서 Junior Web Developer _ 07 / 2019 ~ Present</p>
-              
-              <div className="githubbox container flex flex-col md:flex-row items-center p-4 pb-0">
-                <a
-                  href="https://github.com/YooSeok2"
-                  target="__blank"
-                  className="bg-gray-300 hover:fill-white hover:bg-blue-500 hover:text-white text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
-                >
-               <span className="font-sans">Go to Github</span>
-                </a>
-              </div>
             </div>
             <img src={yooseok}/>
 

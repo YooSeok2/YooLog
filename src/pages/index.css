@@ -128,26 +128,12 @@
     color: green;
 }
 
-.githubbox{
-    margin-left: 14vw;
-}
 
 @media all and (max-width: 1000px){
     .about_body > div > img{
         display: none;
     }
 
-    .about_footer{
-        height: 6vh;
-        
-    }
-    .about_body{
-        height: inherit;
-    }
-
-    .githubbox{
-        margin-left: -1vw;
-    }
     .about_p{
         font-size: 1.5rem;
     }
@@ -155,39 +141,27 @@
     .font_size{
         font-size: 1.3rem;
     }
-}
 
-
-@media all and (max-width: 400px){
-    .about_body > div > img{
-        display: none;
-    }
-    .about_footer{
-        height: 5%;
-        flex: 1;
-        margin-top: 2vh;
-    }
-    
-
-    .about_body{
-        height: 95%;
-        flex: 5;
-    }
-
-    .githubbox{
-        margin-left: -1vw;
-    }
-    .about_p{
-        font-size: 1.5rem;
-    }
-
-    .font_size{
-        font-size: 1.3rem;
-    }
-    
     .hamburger{
         position: absolute;
         left: 6vw;
         top : 1.5vh;
     }
 }
+
+@media all and (max-width: 1000px) and (max-width : 768px){
+    .about_footer{
+        height: 5%;
+        overflow: hidden;
+        margin-top: 2vh;
+    }
+    .about_body{
+        overflow: hidden;
+        height: 95%;
+    }
+}
+
+
+
+
+
