@@ -152,12 +152,24 @@
 @media all and (max-width: 1000px) and (max-width : 768px){
     .about_footer{
         height: 5%;
-        overflow: hidden;
         margin-top: 2vh;
     }
     .about_body{
-        overflow: hidden;
         height: 95%;
+    }
+}
+
+@media all and (max-height : 700px){
+
+    .about_body{
+        width: 100%;
+        font-size: 100%/2rem;
+        overflow: scroll;
+    }
+
+    .about_footer{
+        width: 100%;
+        height: inherit;
     }
 }
 
