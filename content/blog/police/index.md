@@ -11,17 +11,23 @@ topics: 'React'
 ![policemain](./policemain.png)
 
 <br>
+<br>
 
 # 개요
+
+<br>
 
 **실내 실시간 공기질 측정 모니터링**프로젝트를 마치고 얼마 안 지나서 사내에서 진행하는 프로젝트에
 투입되었다. 바로 **경찰청 키오스크**이다. 크게 4개의 메뉴로 나뉘는데 그 중 2개를 맡아서 하였다. 
 공지사항, 매뉴얼/교육 메뉴인데 진행하면서 가장 핵심적인 기능은 **PDF**를 띄우는 일과 **Video**를 
-재생하는 일이다. 또한 PDF는 한 페이지씩 보이며 **검색을 통해** 원하는 페이지로 바로 갈 수 있도록 하였다. 전부 처음하는 일이라 만만치 않은 작업이었다. 특히 **라이브러리**를 가져다 쓰는 일에서 잘못 선택해서 수많은 시행착오를 겪으며 완성하였다.
+재생하는 일이다. 또한 PDF는 한 페이지씩 보이며 **검색을 통해** 원하는 페이지로 바로 갈 수 있도록 하였다. 전부 처음하는 일이라 만만치 않은 작업이었다. 특히 **라이브러리**를 가져다 쓰는 일에서 수많은 시행착오를 겪으며 완성하였다.
 
-***
+<br>
+<br>
 
-# 기획 
+# 기획
+
+<br> 
 
 * **화면은** 키오스크 해상도에 맞추어 모든 요소를 가변이 아닌 고정된 크기로 만든다.
 
@@ -40,9 +46,12 @@ topics: 'React'
 
 ![video](./video.png)
 
-***
+<br>
+<br>
 
 # 기술설계
+
+<br>
 
 * **Pagination**라이브러리를 활용해서 하단에 페이지네이션을 구현한다.
 
@@ -58,25 +67,22 @@ topics: 'React'
     import ReactPaginate from 'react-paginate';
 
     <ReactPaginate
-        pageLinkClassName={'linkpage'}
-        containerClassName={'pagination'}
-        activeClassName={'activepages'}
-        breakClassName={'breaklabel'}
-        activeLinkClassName={'activelink'}
-        pageRangeDisplayed={5}
-        pageCount={this.state.current}
-        previousLabel={
+        pageLinkClassName={'linkpage'}     // 각각의 페이지요소에 <li> 태그 css 수정
+        containerClassName={'pagination'}  // 페이지네이션 전체 컨테이너 css 수정
+        activeClassName={'activepages'}    // 클릭하여 활성화 된 <li> 태그 css 수정
+        activeLinkClassName={'activelink'} // 클릭하여 활성화 된 <a> 태그 css 수정
+        pageRangeDisplayed={5}             // 화면에 보일 페이지 수 조정
+        pageCount={this.state.current}     // 현재 화면에 활성화 할 페이지 설정
+        previousLabel={                    // 이전으로 넘어가는 버튼 html 및 css
             <button className='preBtn'>
                 <img src={back} alt=''/>
             </button>
         }
-        nextLabel={
+        nextLabel={                        // 다음으로 넘어가는 버튼 html 및 css
             <button className='nextBtn'>
                 <img src={back} alt='' className='nextBtnImg'/>
             </button>
         }
-        marginPagesDisplayed={0}
-        initialPage={0}
     />
 ```
 
@@ -105,25 +111,29 @@ topics: 'React'
     pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
     <Document
+
         //활용 함수들
-        file
-        onLoadSuccess
-        loading
+
+        file            // 활성화 할 PDF 설정
+        onLoadSuccess   // PDF가 성공적으로 활성화 됬을 때 콜백되는 함수
+        loading         // 로딩중일 때 콜백되는 함수
     >
         <Page
+
             //활용 함수들
-            width
-            height
-            loading
-            noData
-            error
+
+            width   // 넓이 설정
+            height  // 높이 설정
+            loading // 로딩중일 때 콜백되는 함수
+            noData  // 활성화 할 PDF가 없을 때 콜백되는 함수
+            error   // "Failed to load the page."이 발생하면 콜백되는 함수
         />
     </Document>   
 ```
 
 <br>
 
-**처음 받아온 PDF**라이브러리가 유지보수가 안되고 있어서 제작자가 이 API를 만들면서 사용한 **Mozilla**에서 제공하는 *javascript pdf*라이브러리가 최선버전이 아니었다. 이 때문에 화면에서 pdf에 화면이 깨져서 나왔다. 그래서 이 상위 PDF API만 따로 최신버전으로 업데이트하는 작업을 진행하였다. 
+**사용한 PDF**라이브러리가 유지보수가 안되어 있어서 제작자가 이 API를 만들면서 사용한 **Mozilla**에서 제공하는 *javascript pdf*라이브러리가 최선버전이 아니었다. 이 때문에 화면에서 pdf의 화면이 모두 깨져서 나왔다. **node_modules**에서 이 라이브러리 폴더에 접근 후 원본을 수정하여 **Mozilla**에서 제공하는 *javascript pdf*라이브러리만 따로 최신버전으로 업데이트하는 작업을 진행하였다. 
 
 <br>
 
@@ -145,10 +155,8 @@ topics: 'React'
     import {Player} from 'video-react';
 
     <Player
-        autoPlay
-        playsInline
-        poster
-        src
+        autoPlay    // 영상 자동재생 여부 Type : boolean
+        src         // 재생 할 비디오 설정
     />
 ```
 
@@ -158,7 +166,7 @@ topics: 'React'
 
 <br>
 
-*참고링크 :* **https://github.com/video-react/video-react#readme**
+*참고링크 :* **https://video-react.js.org/components/player/**
 
 * **Dependancies**
 

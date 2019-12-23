@@ -10,24 +10,31 @@ description: '떠오르는 웹계의 신성 React.js를 공부하기 위해 숙�
 ![instagram](./instagram.png)
 
 <br>
+<br>
 
 # 개요
+
+<br>
 
 >javascript는 어느 순간부터 프레임워크 및 라이브러리의 홍수 속에 있는 듯합니다.
 
 어느 네이버 개발자가 한 말이다. 나도 위의 문구에 크게 공감한다. 그 중에서도 3대장이라 불리우는 **Vue.js, Augular.js, React.js**는 혁신을 불러 일으키고 있다. 이 최신 동향에 발 맞추어 나 또한 3대장 중 **React.js를 공부**하기 위해 숙주인 페이스북에 대표 SNS인 인스타그램에 메인화면을 JSX문법을 이용하여 구현하고 React를 더 풍부하게 해주는 여러 라이브러리 중 화면 이동시 유용한 Router와 데이터 관리에 유용한 Redux를 이용해 메인화면에서 가입 시 입력창에 기입된 정보를 넘기어 다른 화면에서 볼 수 있도록 만들었다.
 
-***
-***
+<br>
+<br>
 
 # React.js란
-***
+
+<br>
+
 그렇다면 **React.js**는 도대체 뭐길래 그토록 개발자들이 열광하는걸까? 리엑트는 프론트엔드 라이브러리이다. 이 프론트엔드 라이브러리를 설명하자면 우리는 그냥 **정적인 페이지**를 만들기 위해서라면 HTML과 CSS를 사용해서 만들면 된다. 하지만 **동적인 페이지**를 만들려면 여기에 **JavaScript**가 추가된다. 페이지를 동적인 상태로 관리하기 위해서는 많은 상태들을 관리해줘야 되는데 요즘같이 **웹 어플리케이션**이라 불리울 정도로 규모가 커진 페이지를 관리할 때에는 굉장히 복잡해져서 힘들것이다. 여기서 등장한게 바로 **프론트라이브러리**인 것이다. 즉 복잡한 DOM관리나 상태값 관리는 최소화하고 사용자 인터페이스를 구현하는데에만 집중할 수 있도록 도움을 준다. *그 중 하나가 바로 리엑트이고 현재 많은 개발자들에게 사랑받고 있다.* 
 
-***
-***
+<br>
+<br>
 
 # 기획
+
+<br>
 
 * **Instagram 메인화면**을 참고하여 개발자 코드를 보지 않고 react를 사용하여 JSX문법과 CSS로 화면을 구현한다.
 
@@ -43,10 +50,12 @@ description: '떠오르는 웹계의 신성 React.js를 공부하기 위해 숙�
 
 * **구현 시 필요한 resources**는 해당 페이지 개발자 창에서 받아와 쓴다.
 
-***
-***
+<br>
+<br>
 
 # 기술 설계
+
+<br>
 
 * **create-react-app 폴더명**을 통해 작업환경이 준비가 되어있는 상태로 시작한다.이는 facebook에서 관리하는 React Boilerplate code이다. 따로 Boilerplate를 만들어 사용할 경우 버전 관리 및 업데이트에서 시간을 많이 소모해야되고 번거롭다. 당장에 **webpack, babel**은 리엑트를 할 때에 필요한 요소이기에 포함해야 되는데 이들을 세팅하는 일이 엄청 복잡하다. 하지만 **create-react-app** 명령어 하나면 모든게 해결된다.
 
@@ -71,13 +80,15 @@ description: '떠오르는 웹계의 신성 React.js를 공부하기 위해 숙�
 
 Route를 통해 해당 페이지에 path설정을 할 수 있으며 component에는 상단에서 연결해 줄 파일과 import할 때 지정한 이름을 써준다. 
 
-***
+<br>
 
 **참고자료링크 : https://github.com/ReactTraining/react-router**</br>
 
 
 * *redux : npm redux, npm react-redux, npm immutable* 리엑트에서 데이터관리를 수월하게 해주는 라이브러리이다. 
-***
+
+<br>
+
 *생성 폴더 및 파일*<br>
 -store<br>
 &nbsp;&nbsp;&nbsp;-modules<br>
@@ -169,7 +180,8 @@ export default combineReducers({
 ```
 **하나의 어플리케이션에서 리듀서는 하나여야 한다** 하지만 리듀서가 여러개가 필요할 떄가 있을 수 있기에 여기에서는 여러 리듀서를 합쳐주는 일을 한다. 이때 사용한 함수는 **redux 내장함수인 combineReducers**이다. *export default*로 내보내려는 모듈을 감싸주면된다.
 
-***
+<br>
+
 **store/configure.js**
 ```jsx
 import {createStore} from 'redux';
@@ -188,12 +200,12 @@ export default configure;
 import configure from './configure';
 export default configure();
 ```
-
-***
+<br>
 
 **createStore는 모듈을 이용해 리듀서 스토어**를 만드는 일을 한다. 여기서 **devTools**는 크롬확장프로그램인데 리덕스 개발을 더욱 편하게 하기 위해 사용했다. 사용하지 않아도 상관없다.
 
-***
+<br>
+
 **src/client/Root.js**
 ```jsx
 import {Provider} from 'react-redux';
@@ -210,9 +222,12 @@ const Root = () => (
 
 export default Root;
 ```
-***
+<br>
+
 **Provider**을 통해 리액트 프로젝트에 스토어를 연동해준다.
-***
+
+<br>
+
 **containers/RegisterContainer.js**
 ```jsx
 import React, {Component} from 'react';

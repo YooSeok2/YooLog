@@ -10,8 +10,11 @@ description: '채널에 추가된 슬랙 봇이 사용자가 보내는 메세지
 ![slack](./slack.png)
 
 <br>
+<br>
 
 # 개요
+
+<br>
 
 **슬랙 봇**에 대해 알게되고 더 자세히 알아보려고 인터넷 서치를 하던 중 한 블로그에서 재밌는 글을 보았다. 내용을 간략히 정리하자면 
 사내에서 슬랙 봇을 이용하여 **여러 문제들을 해결**하고 있다는 것이었다. 그 사례로는 서비스 내 용어가 팀별로 다르게 쓰이거나 여러가지로 
@@ -23,9 +26,12 @@ description: '채널에 추가된 슬랙 봇이 사용자가 보내는 메세지
 
 **참고자료 링크 : https://spoqa.github.io/2017/05/22/slackbot.html**
 
-***
+<br>
+<br>
 
 # 기획
+
+<br>
 
 * **슬랙 해당 채널**에 *출근,퇴근,ㅌㄱ,ㅊㄱ* 등에 키워드를 슬랙 봇이 듣도록 설정한다. 텍스트를 입력했을 때 문장에 해당하는 키워드가 있을 경우
   그 문장을 작성한 유저에 필요한 정보를 가져온다.
@@ -48,9 +54,12 @@ description: '채널에 추가된 슬랙 봇이 사용자가 보내는 메세지
 
 ![calendar](./calendar.png)
 
-***
+<br>
+<br>
 
 # 기술 설계
+
+<br>
 
 * **create-react-app 폴더명**을 통해 작업환경이 준비가 되어있는 상태로 시작한다.이는 facebook에서 관리하는 React Boilerplate code이다. 따로 Boilerplate를 만들어 사용할 경우 버전 관리 및 업데이트에서 시간을 많이 소모해야되고 번거롭다. 당장에 **webpack, babel**은 리엑트를 할 때에 필요한 요소이기에 포함해야 되는데 이들을 세팅하는 일이 엄청 복잡하다. 하지만 **create-react-app** 명령어 하나면 모든게 해결된다.
 
@@ -60,16 +69,13 @@ description: '채널에 추가된 슬랙 봇이 사용자가 보내는 메세지
 
 <br>
 
-1. **슬랙 봇 연결** 채널에 추가한 슬랙 봇에 토큰을 받아와 연결해준다.
-
-<br>
+1. **슬랙 봇 연결** 채널에 추가한 슬랙 봇에 토큰을 받아와 연결.
 
 Slack에 있는 API를 활용하기 위해서 먼저 설치를 한다.
 
 ```renux
     npm install --save @slack/client 
 ```
-
 <br>
 
 ```jsx
@@ -95,7 +101,9 @@ web.chat.postMessage
 
 <br>
 
-**RTMClient와 WebClient**를 선언하고 token과 연결을 해줘야되는데 여기서 **token은** 사전에 슬랙에서 생성한 슬랙 봇에 고유 번호이다. 이는 노출되서는 안되기에 .env에서 관리한다. **rtm, web**으로 선언한 슬랙 API와 Token을 연결해서 생성한다. 마지막으로 생성된 객체를 실행해준다.
+**주석을 모두 읽어주세요**
+
+**RTMClient와 WebClient**를 선언하고 token과 연결을 해줘야 되는데 여기서 **token은** 사전에 슬랙에서 생성한 슬랙 봇에 고유 번호이다. 이는 노출되서는 안되기에 .env에서 관리한다. 먼저 **rtm, web**으로 선언한 슬랙 API와 Token을 연결해서 생성한다. 그리고 생성된 객체를 실행해준다.
 
 <br>
 
@@ -103,9 +111,7 @@ web.chat.postMessage
 
 <br>
 
-2. **Sequelize**를 사용한 데이터베이스 관리.
-
-<br>
+2. **Sequelize**를 사용한 데이터베이스 관리.    
 
 **sequelize** 설치
 
@@ -115,6 +121,9 @@ web.chat.postMessage
 
 <br>
 
+**데이터베이스 관리는** 모두 models폴더에서 따로 하였다. 필요한 테이블 파일을 생성하고 index파일에서 테이블을 합쳐 하나의 
+DB로 만들어주는 구조로 설계하였다.
+
 * models/goworks.js
 
 ```jsx
@@ -122,12 +131,12 @@ web.chat.postMessage
 module.exports = (sequelize, DataType)=>{
     const Gowork = sequelize.define("goworks",{
         name :{
-            type : DataType.STRING,
-            allowNull : false ,
+            type : DataType.STRING,  //데이터 타입 설정 
+            allowNull : false ,      //null값 허용 설정 Type : boolean
             
         },
         gowork:{
-            type : DataType.STRING,
+            type : DataType.STRING, 
             allowNull : false 
         },
         time : {
@@ -144,6 +153,7 @@ module.exports = (sequelize, DataType)=>{
     return Gowork;
 }
 ```
+sequelize에서 제공하는 함수 중 **define 함수**를 통해 테이블을 생성하였다. **첫 번째 인자값**에 테이블 이름을 정의하고 **두 번째 인자값**에 테이블에서 사용할 Column을 정의해준다.
 
 <br>
 
@@ -185,7 +195,9 @@ module.exports = db;
 
 <br>
 
-**goworks.js**에서 테이블을 생성하고 내보낸다. goworks.js말고도 holidays.js, offworks.js, generals.js도 있으나 예로 하나에 파일만 참고하겠다.저렇게 내보낸 sequelize파일들 즉 테이블들을 **index.js**에서 모아서 하나의 **DB**를 만들어준다. 
+**주석을 모두 읽어주세요**
+
+현재 폴더에 있는 **index**파일을 제외한 테이블이 정의된 모든 파일을 읽어와서 **sequelize**를 이용해 **하나의 DB**를 만들어 내보낸다.
 
 <br>
 
