@@ -24,6 +24,6 @@ const Social = () => (
       </a>
     </li>
   </ul>
-);
+)
 
 export default Social;

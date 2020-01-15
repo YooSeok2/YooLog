@@ -41,13 +41,13 @@ const About = ({ data }) => {
                   <span className="console">Console.log </span>(" graduated : 서울삼성고등학교 ( 02/2009 ~ 03/2012 ) ")
                 </li>
                 <li className="font font_size m-0 ml-2">
-                  <span className="console">Console.log </span> (" attending : 대림대학교 ( 03/2017 ~ Present ) ")
+                  <span className="console">Console.log </span> (" attending : 대림대학교 컴퓨터정보학부 ( 졸업예정 ) ")
                 </li>
               </ul>
 
               <h3 className="about_h3 text-3xl text-blue-400">경험</h3>
 
-              <p className="about_p">(주)시더에서 Junior Web Developer _ 07 / 2019 ~ Present</p>
+              <p className="about_p">(주)시더에서 Junior Web Developer _ 07 / 2019 ~ 12 / 2019</p>
             </div>
             <img src={yooseok}/>
 
