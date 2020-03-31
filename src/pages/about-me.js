@@ -41,7 +41,7 @@ const About = ({ data }) => {
                   <span className="console">Console.log </span>(" graduated : 서울삼성고등학교 ( 02/2009 ~ 03/2012 ) ")
                 </li>
                 <li className="font font_size m-0 ml-2">
-                  <span className="console">Console.log </span> (" attending : 대림대학교 컴퓨터정보학부 ( 졸업예정 ) ")
+                  <span className="console">Console.log </span> (" attending : 대림대학교 컴퓨터정보학부 졸업 ")
                 </li>
               </ul>
 
