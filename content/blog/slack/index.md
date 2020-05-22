@@ -3,7 +3,7 @@ path: '/blog/2019/11/26/slack'
 image: './slack.png'
 title: '슬랙 봇을 이용한 사내 출결 관리 시스템'
 date: '2019-11-26T02:04:20.769Z'
-topics: 'React and Slack API'
+topics: 'React,NodeJs,ExpressJs,Sequelize and Slack API'
 description: '채널에 추가된 슬랙 봇이 사용자가 보내는 메세지에 조건에 맞는 키워드가 있을 경우 그 문장을 추출하여 활용한다.'
 ---
 
