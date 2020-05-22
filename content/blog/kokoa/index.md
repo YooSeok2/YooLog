@@ -360,7 +360,7 @@ banner.js에서 넘겨 받은 index값이 2와 4일 때 아래와 같이 구현�
 <br>
 
 * ### Github 주소
-**https://github.com/YooSeok2/react_Instagram**
+**https://github.com/YooSeok2/React_KAKAO**
 
 * ### 프로젝트 배포주소
 **https://yooskakao.netlify.app/**
