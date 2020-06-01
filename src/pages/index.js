@@ -13,7 +13,7 @@ const Index = () => (
       query {
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
-          limit: 4
+          limit: 5
         ) {
           edges {
             node {
